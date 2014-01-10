@@ -1,0 +1,29 @@
+Name:            koellnerphonetic
+version:         0.0
+synopsis:        "synopsis"
+category:        Utils
+maintainer:      "Marc Weber"
+description:     "German soundex like code, see wikipedia http://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik"
+build-type:      Simple
+license:         GPLv3
+cabal-version: >= 1.2
+
+-- TODO drop HUnit after fixing hack-nix
+Library
+  build-depends:
+    base >= 2,
+    HUnit
+  ghc-options   : -Wall
+
+-- executable "MyTest"
+--   build-depends:
+--     base >= 2,
+--     HUnit
+--   main-is:        Main.hs
+--   hs-source-dirs: test, src
+
+Test-Suite test-koellner-phonetic
+  type: exitcode-stdio-1.0
+  hs-source-dirs: test, src
+  main-is: Main.hs
+  build-depends: base, HUnit
