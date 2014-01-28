@@ -1,11 +1,11 @@
-Name:            koellnerphonetic
+Name:            koellner-phonetic
 version:         0.0
-synopsis:        "synopsis"
-category:        Utils
+synopsis:        "map German words to code representing pronunciation"
+category: Text, Natural Language Processing
 maintainer:      "Marc Weber"
-description:     "German soundex like code, see wikipedia http://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik"
+description:     "German soundex like code, see Wikipedia http://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik"
 build-type:      Simple
-license:         GPLv3
+license:         BSD3
 cabal-version: >= 1.2
 
 -- TODO drop HUnit after fixing hack-nix
